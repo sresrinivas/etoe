@@ -20,7 +20,6 @@ what are the diff types cloud models
 > introduction to aws --- ORGANIZATION---ACCOUNT 
 > creating aws account-
 
-https://signin.aws.amazon.com/signin?client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_eu-north-1_3c4411f4beca01e1&page=resolve&code_challenge=FQkThGwxaS7UXS2ltoGb6UavDsSLvObebI_KfS1d40o&code_challenge_method=SHA-256&backwards_compatible=true
 
 
   How to perform activities /actions in the aws:
@@ -512,6 +511,7 @@ high value(+10) gives low priority--less cpu allocated
 
 
     
+
 
 
 
