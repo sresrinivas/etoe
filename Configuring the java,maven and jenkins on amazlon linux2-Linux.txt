@@ -2,9 +2,7 @@
 >launch amazonlinux
 >login as root
      $sudo su -
-     $yum remove java-1.7.0*
-     now check the version, java removed or not.
-     java -version
+
 >now install java 1.8:
 ________________________
 
@@ -16,9 +14,6 @@ after java installation , we need to set up the homepath of our java for that we
 
 $find /usr/lib/jvm/java-1.8* | head -n 3
 
-o/p:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.272.b10-1.amzn2.0.1.x86_64
-
-note:we need to set the path the jre into homeuser , for that
 $cd ~
 $vi ~/.bash_profile
 
@@ -28,27 +23,9 @@ PATH=$PATH:$HOME/bin:$JAVA_HOME
 $echo $JAVA_HOME
 o/p:/usr/lib/jvm/jre--
 
-note:if o/p is not shown,les try to LOGOFF AND LOGIN TO GET IT EFFECT
-
 $exit
 $sudo su -
 
->now to get the full path  again fire the following cmd
-
-$echo $JAVA_HOME
-
-NOW LETS INSTALL JENKINS,IF U TRY TO INSTALL JENKINS USING THE 
-FOLLOWING COMMAND
-
-$yum install jenkins
-
-o/p:Loaded plugins: priorities, update-motd, upgrade-helper
-amzn-main                                                | 2.1 kB     00:00
-amzn-updates                                             | 2.5 kB     00:00
-No package jenkins available.
-Error: Nothing to do
-
-reason:it doesnot have repository to pull the code, for that
 go to google search as " download jenkins", take the frist link
 https://www.jenkins.io/download/ , now click on Redhat/Fedora/centos
 then it navigates to "https://pkg.jenkins.io/redhat-stable/"
@@ -72,14 +49,6 @@ $service jenkins start
 o/p:its running
 
 $service jenkins status
-
-now to access the jenkins ui from the browser, goto ec2 , copy the
-public ip of the ec2 and  map the port 8080 in the browser
-
-
-3.17.167.38:8080
-
-now it open the jenkins and ask the passwd to unlock the jenkins
 
 $cat /var/lib/jenkins/secrets/initialAdminPassword
 
@@ -326,6 +295,7 @@ https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.93/bin/apache-tomcat-7.0.93
 >nex t donwload deploy to container plug-in
 >postbuild actions lo: **/*.war
 =====================================================================================================================================================================================
+
 
 
 
