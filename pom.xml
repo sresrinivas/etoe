@@ -43,6 +43,7 @@
 				</configuration> 
 			</plugin>
 		</plugins>
+	</build>
 	
  <profiles>
 	 <profile>
@@ -74,5 +75,5 @@
 
 
 </profiles>
-	</build>	
+	
 </project>
