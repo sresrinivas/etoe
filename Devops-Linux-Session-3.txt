@@ -13,7 +13,8 @@ unalias
 type
 uptime
 cp
-mv
+
+
 
 
 
