@@ -1,0 +1,23 @@
+name: deploy EcommApp 
+on:
+  push:
+    branches: [ "master"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup jdk 17
+    - uses: actions/setup-java@v4  
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with maven   
+      run: mvn -B package --file pom.xml
+    - name: deploy ecomm to tomcatserver-running inside Ec2 
+      env:
+        tomcatuser: ${{secret.serverusername}}
+        tomcatpwd: ${{secret.serverpwd}}
+      run: curl -v -u $tomcatuser:$tomcatpwd  -T /home/runner/work/etoe/etoe/target/Ecomm.war 'http://13.232.139.41:8080/manager/text/deploy?path=/Ecomm.war'
+        

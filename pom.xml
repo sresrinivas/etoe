@@ -44,4 +44,36 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+ <profiles>
+	 <profile>
+		 <id>dev</id>
+			 <properties>
+				 <tomcat.url>http://65.1.248.150:8080/manager/text</tomcat.url>
+				  <tomcat.username>admin</tomcat.username>
+				  <tomcat.password>admin</tomcat.password>
+			 </properties>
+		 </profile>
+
+	  <profile>
+		 <id>qa</id>
+			 <properties>
+				 <tomcat.url>http://65.2.57.185:8080/manager/text</tomcat.url>
+				  <tomcat.username>admin</tomcat.username>
+				  <tomcat.password>admin</tomcat.password>
+			 </properties>
+		 </profile>
+
+ <profile>
+		 <id>prod</id>
+			 <properties>
+				 <tomcat.url>http://13.235.81.38:8080/manager/text</tomcat.url>
+				  <tomcat.username>admin</tomcat.username>
+				  <tomcat.password>admin</tomcat.password>
+			 </properties>
+		 </profile>
+
+
+</profiles>
+	
 </project>
