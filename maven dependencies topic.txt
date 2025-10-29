@@ -1,0 +1,68 @@
+what is Dependency:
+*************************
+is a xml element
+reprasent as software in the maven
+its kind of maven coordinates
+generally called GAV propery
+<dependencies>
+    <dependency>
+        <groupId>com.github.docker-java</groupId>
+       <artifactId>docker-java</artifactId>
+       <version>3.6.0</version>
+<scope>compile</scope>
+</dependency>
+
+https://mvnrepository.com/
+
+what is dependency analysis:
+**********************************
+conflicted
+outdated
+missed
+upto the standars or not
+
+where dependencies are added:
+*************************************
+pom.xml
+
+types of pom:
+***************
+1) super pom
+2)project pom
+pom--project object model
+
+note: its devops engineer responsibiluty to verify the supporting and valid denpendencies for the project before build creation
+
+types of dependencies:
+*****************************
+optional dependencies
+transitive dependencies
+
+scope of dependency:[availabilty 
+***********************************
+compile
+provided
+runtime
+ test
+system
+import
+
+
+mvn dependency:purge-local-repository: remove dependencies from local repositories
+
+Plug-in:
+***********
+questions: wha tis the  diff between  plug-in and dependencies
+
+
+***************************************************************************************************************************************
+Dependency Analysis: mvn dependency:analyze
+
+codecoverage plug-ins
+importance of owsap-dependencies
+implementing SAST-USING-SONARQUBE
+Implementing BinaryArtifactoryManagement Tool---Jfrog+maven/CodeArtifact:
+=======================================================================
+CodeBuild+CodeArtifact:
+
+Codecommit[github,bitbucket]+CodeBuild+CodeArtifact+codedeploy+codepipeline
