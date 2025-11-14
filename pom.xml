@@ -31,6 +31,20 @@
 		<finalName>Ecomm</finalName>
 		<plugins>
 			<plugin> 
+
+
+				groupId>com.github.ekryd.sortpom</groupId>
+            <artifactId>sortpom-maven-plugin</artifactId>
+            <version>4.0.0</version> <!-- Use the latest version from Maven Central -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>sort</goal>
+                    </goals>
+                    <phase>verify</phase> <!-- Binds the goal to the verify phase -->
+                </execution>
+            </executions>
+
 				<groupId>org.apache.tomcat.maven</groupId> 
 				<artifactId>tomcat7-maven-plugin</artifactId> 
 				<version>2.2</version> 
