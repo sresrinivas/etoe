@@ -1,0 +1,29 @@
+
+
+name: build with maven
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn clean package  --file pom.xml
+    - name: deploy app to tomcat
+      run: curl -v -U admin:admin /home/runner/work/etoe/etoe/target/Ecomm.war 'http://65.0.75.36:8080/manager/text/deploy?path=/Ecomm.war'
+
+   
