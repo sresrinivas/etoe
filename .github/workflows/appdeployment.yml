@@ -1,10 +1,9 @@
-name: build package with build tool 
+name: deploy app with maven and tomcat
 
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+
 
 jobs:
   build:
