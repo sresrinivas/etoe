@@ -238,4 +238,5 @@ Another useful searching tool of Linux is sed. This command can be used for both
 $ cat employee.txt
 $ sed -n '/J/p' employee.txt | awk -F '\t' '{ printf "%s(%s)\n", $2, $1 }'
 
+done some chnages
 
