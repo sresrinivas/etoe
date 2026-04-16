@@ -1,0 +1,137 @@
+docker fundamentals:
+*********************
+what is virtualization
+types of virtualization
+how hard-level vitualization works
+what are the issues at hard-level virtualization
+
+containers
+docker architecture
+docker terminology:
+  image,containers,layers,docker file system structure
+  daemon,configurations,registry,union filesystem,image caching
+   image tagging,what are the diff types of registries/repositories/images
+
+how to create custom images:---docker file instructions
+======================================================
+
+docker internals:
+*****************
+
+container-runtime environment:
+********************************
+namespaces: pid/net/mount/ipc/uts/user
+cgroups: cpu limits/memory linits/io limits
+
+file system internals:
+*************************
+overlay2
+aufs
+device mappers
+BTRFS
+
+HOW TO WORK WITH REGISTRIES:
+
+JFROG/DOCKERHUB/ECR/ACR
+WEBHOOKS INTEGRATION 
+GITHUB+DOCKER
+GITHUBACTIONS:---PIPELINE
+GITLAB----PIPELINE
+AZUREDVOPS
+CODEPIPELINE
+JENKINS---
+
+DOCKER NETWORKING:
+*******************
+DRIVERS: BRIDGE,HOST,NONE,OVERLAY,MACVALAN
+BRIDGE NETWORK INTERNALS:
+**************************
+IPTABLES RULES
+DOCKER0 BRIDGE
+VETHPAIR
+NAT
+STORAGE AND VOLUMES:
+*********************
+VOLUMES
+BINDMOUNTS
+TMPFS
+
+
+DOCKER SECURITY:
+*****************
+APPARMOR
+SECCOMP
+SELINUX
+read-only containers
+capabilities
+
+
+trivy: 
+clair
+snyk
+root less containers
+
+docker-compose:
+*****************
+
+
+monitoring:
+**************
+Grafana
+Prometheus
+logging:
+********
+elk/efk
+
+troubleshooting containers?
+****************************
+
+usecases?
+
+
+performance optimization
+**************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
